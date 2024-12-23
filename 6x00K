@@ -1,0 +1,382 @@
+local player = game.Players:FindFirstChild("hack_86675")
+
+if player then
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Parent = player:WaitForChild("PlayerGui")
+
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(0, 200, 0, 550)
+    frame.Position = UDim2.new(1, -210, 0, 10)
+    frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    frame.BorderSizePixel = 0
+    frame.Parent = screenGui
+
+    local titleLabel = Instance.new("TextLabel")
+    titleLabel.Size = UDim2.new(1, 0, 0, 30)
+    titleLabel.Position = UDim2.new(0, 0, 0, 0)
+    titleLabel.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+    titleLabel.Text = "Team 6x00K"
+    titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    titleLabel.TextScaled = true
+    titleLabel.Parent = frame
+
+    local button1 = Instance.new("TextButton")
+    button1.Size = UDim2.new(1, 0, 0, 30)
+    button1.Position = UDim2.new(0, 0, 0, 40)
+    button1.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    button1.Text = "Button 1"
+    button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button1.TextScaled = true
+    button1.Parent = frame
+
+    local button2 = Instance.new("TextButton")
+    button2.Size = UDim2.new(1, 0, 0, 30)
+    button2.Position = UDim2.new(0, 0, 0, 80)
+    button2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    button2.Text = "Button 2"
+    button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button2.TextScaled = true
+    button2.Parent = frame
+
+    local button3 = Instance.new("TextButton")
+    button3.Size = UDim2.new(1, 0, 0, 30)
+    button3.Position = UDim2.new(0, 0, 0, 120)
+    button3.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    button3.Text = "Button 3"
+    button3.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button3.TextScaled = true
+    button3.Parent = frame
+
+    local highlightButton = Instance.new("TextButton")
+    highlightButton.Size = UDim2.new(1, 0, 0, 30)
+    highlightButton.Position = UDim2.new(0, 0, 0, 160)
+    highlightButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    highlightButton.Text = "Highlight Name"
+    highlightButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    highlightButton.TextScaled = true
+    highlightButton.Parent = frame
+
+    local messageButton = Instance.new("TextButton")
+    messageButton.Size = UDim2.new(1, 0, 0, 30)
+    messageButton.Position = UDim2.new(0, 0, 0, 200)
+    messageButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    messageButton.Text = "Send Message"
+    messageButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    messageButton.TextScaled = true
+    messageButton.Parent = frame
+
+    local burnButton = Instance.new("TextButton")
+    burnButton.Size = UDim2.new(1, 0, 0, 30)
+    burnButton.Position = UDim2.new(0, 0, 0, 240)
+    burnButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    burnButton.Text = "Burn All"
+    burnButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    burnButton.TextScaled = true
+    burnButton.Parent = frame
+
+    local partyButton = Instance.new("TextButton")
+    partyButton.Size = UDim2.new(1, 0, 0, 30)
+    partyButton.Position = UDim2.new(0, 0, 0, 280)
+    partyButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    partyButton.Text = "Party Effect"
+    partyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    partyButton.TextScaled = true
+    partyButton.Parent = frame
+
+    local waterButton = Instance.new("TextButton")
+    waterButton.Size = UDim2.new(1, 0, 0, 30)
+    waterButton.Position = UDim2.new(0, 0, 0, 320)
+    waterButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    waterButton.Text = "Flood Map"
+    waterButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    waterButton.TextScaled = true
+    waterButton.Parent = frame
+
+    local meteorButton = Instance.new("TextButton")
+    meteorButton.Size = UDim2.new(1, 0, 0, 30)
+    meteorButton.Position = UDim2.new(0, 0, 0, 360)
+    meteorButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    meteorButton.Text = "Fire Meteors"
+    meteorButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    meteorButton.TextScaled = true
+    meteorButton.Parent = frame
+
+    local tentButton = Instance.new("TextButton")
+    tentButton.Size = UDim2.new(1, 0, 0, 30)
+    tentButton.Position = UDim2.new(0, 0, 0, 400)
+    tentButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    tentButton.Text = "Create Tent"
+    tentButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    tentButton.TextScaled = true
+    tentButton.Parent = frame
+
+    local fireMapButton = Instance.new("TextButton")
+    fireMapButton.Size = UDim2.new(1, 0, 0, 30)
+    fireMapButton.Position = UDim2.new(0, 0, 0, 440)
+    fireMapButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    fireMapButton.Text = "Fire Map"
+    fireMapButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    fireMapButton.TextScaled = true
+    fireMapButton.Parent = frame
+
+    local musicButton = Instance.new("TextButton")
+    musicButton.Size = UDim2.new(1, 0, 0, 30)
+    musicButton.Position = UDim2.new(0, 0, 0, 480)
+    musicButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    musicButton.Text = "Play Music"
+    musicButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    musicButton.TextScaled = true
+    musicButton.Parent = frame
+
+    local chaosButton = Instance.new("TextButton")
+    chaosButton.Size = UDim2.new(1, 0, 0, 30)
+    chaosButton.Position = UDim2.new(0, 0, 0, 520)
+    chaosButton.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+    chaosButton.Text = "Create Chaos"
+    chaosButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    chaosButton.TextScaled = true
+    chaosButton.Parent = frame
+
+    local platform = Instance.new("Part")
+    platform.Size = Vector3.new(10, 1, 10)
+    platform.Position = Vector3.new(0, 0, 0)
+    platform.Anchored = true
+    platform.CanCollide = true
+    platform.Parent = workspace
+
+    button1.MouseButton1Click:Connect(function()
+        while true do
+            for _, part in pairs(workspace:GetDescendants()) do
+                if part:IsA("BasePart") and part ~= platform then
+                    part.Position = part.Position - Vector3.new(0, 9, 0)
+                end
+            end
+            wait(0.1)
+        end
+    end)
+
+    button2.MouseButton1Click:Connect(function()
+        local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.MaxHealth = math.huge
+            humanoid.Health = math.huge
+        end
+
+        local function updatePlatformPosition()
+            while true do
+                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                    local playerPos = player.Character.HumanoidRootPart.Position
+                    platform.Position = Vector3.new(playerPos.X, playerPos.Y - 2, playerPos.Z)
+                end
+                wait(0.1)
+            end
+        end
+
+        updatePlatformPosition()
+    end)
+
+    button3.MouseButton1Click:Connect(function()
+        local sky = Instance.new("Sky")
+        sky.SkyboxBk = "rbxassetid://80301035432467"
+        sky.SkyboxDn = "rbxassetid://80301035432467"
+        sky.SkyboxFt = "rbxassetid://80301035432467"
+        sky.SkyboxLf = "rbxassetid://80301035432467"
+        sky.SkyboxRt = "rbxassetid://80301035432467"
+        sky.SkyboxUp = "rbxassetid://80301035432467"
+        sky.Parent = game.Lighting
+
+        for _, part in pairs(workspace:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.TextureID = "rbxassetid://80301035432467"
+            elseif part:IsA("Decal") then
+                part.Texture = "rbxassetid://80301035432467"
+            elseif part:IsA("Texture") then
+                part.Texture = "rbxassetid://80301035432467"
+            elseif part:IsA("MeshPart") then
+                if part:FindFirstChild("SurfaceAppearance") then
+                    local surfaceAppearance = part.SurfaceAppearance
+                    surfaceAppearance.AlbedoMap = "rbxassetid://80301035432467"
+                end
+            end
+        end
+    end)
+
+    highlightButton.MouseButton1Click:Connect(function()
+        local nameTag = Instance.new("BillboardGui")
+        nameTag.Size = UDim2.new(0, 100, 0, 50)
+        nameTag.Adornee = player.Character:FindFirstChild("Head")
+        nameTag.Parent = player.Character.Head
+
+        local nameLabel = Instance.new("TextLabel")
+        nameLabel.Size = UDim2.new(1, 0, 1, 0)
+        nameLabel.BackgroundTransparency = 1
+        nameLabel.Text = "6x00K"
+        nameLabel.TextColor3 = Color3.fromRGB(255, 0, 0) -- Красный цвет
+        nameLabel.TextScaled = true
+        nameLabel.Parent = nameTag
+    end)
+
+    messageButton.MouseButton1Click:Connect(function()
+        local message = "Team 6x00K joined today!"
+        
+        local billboardGui = Instance.new("BillboardGui")
+        billboardGui.Size = UDim2.new(0, 200, 0, 50)
+        billboardGui.StudsOffset = Vector3.new(0, 5, 0)  
+        billboardGui.Adornee = platform  
+        billboardGui.Parent = workspace
+
+        local messageLabel = Instance.new("TextLabel")
+        messageLabel.Size = UDim2.new(1, 0, 1, 0)
+        messageLabel.BackgroundTransparency = 1
+        messageLabel.Text = message
+        messageLabel.TextColor3 = Color3.fromRGB(255, 255, 0)  
+        messageLabel.TextScaled = true
+        messageLabel.Parent = billboardGui
+
+        delay(5, function()
+            billboardGui:Destroy()
+        end)
+    end)
+
+    burnButton.MouseButton1Click:Connect(function()
+        for _, targetPlayer in pairs(game.Players:GetPlayers()) do
+            if targetPlayer ~= player then
+                local character = targetPlayer.Character
+                if character then
+                    local humanoid = character:FindFirstChildOfClass("Humanoid")
+                    if humanoid then
+                        humanoid:TakeDamage(humanoid.Health)  
+                        local fire = Instance.new("Fire")
+                        fire.Size = 5
+                        fire.Heat = 10
+                        fire.Parent = character
+                    end
+                end
+            end
+        end
+    end)
+
+    partyButton.MouseButton1Click:Connect(function()
+        local colors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(255, 255, 0), Color3.fromRGB(255, 0, 255), Color3.fromRGB(0, 255, 255)}
+        
+        while true do
+            for _, color in pairs(colors) do
+                game.Lighting.Ambient = color
+                wait(1)
+            end
+        end
+    end)
+
+    waterButton.MouseButton1Click:Connect(function()
+        local waterHeight = 100  
+        local waterSize = 2000  
+
+        local water = Instance.new("Part")
+        water.Size = Vector3.new(waterSize, waterHeight, waterSize)
+        water.Position = Vector3.new(0, waterHeight / 2, 0)  
+        water.Anchored = true
+        water.BrickColor = BrickColor.new("Bright blue")
+        water.Material = Enum.Material.Water
+        water.Parent = workspace
+
+        local waterBottom = water:Clone()
+        waterBottom.Position = Vector3.new(0, -waterHeight / 2, 0)  
+        waterBottom.Parent = workspace
+    end)
+
+    meteorButton.MouseButton1Click:Connect(function()
+        for i = 1, 20 do
+            local meteor = Instance.new("Part")
+            meteor.Size = Vector3.new(9, 9, 9) 
+            meteor.BrickColor = BrickColor.new("Bright red")
+            meteor.Material = Enum.Material.Neon
+            meteor.Position = Vector3.new(math.random(-100, 100), 100, math.random(-100, 100)) 
+            meteor.Anchored = false
+            meteor.CanCollide = true 
+            meteor.Parent = workspace
+
+            local fire = Instance.new("Fire")
+            fire.Size = 10
+            fire.Heat = 10
+            fire.Parent = meteor
+
+            meteor.Touched:Connect(function(hit)
+                local character = hit.Parent
+                local humanoid = character:FindFirstChildOfClass("Humanoid")
+                if humanoid then
+                    humanoid:TakeDamage(100) 
+                end
+            end)
+
+            meteor.Velocity = Vector3.new(0, -50, 0) 
+        end
+    end)
+
+    tentButton.MouseButton1Click:Connect(function()
+        local tent = Instance.new("Part")
+        tent.Size = Vector3.new(10, 10, 10) 
+        tent.Position = Vector3.new(0, 5, 0) 
+        tent.Anchored = true
+        tent.BrickColor = BrickColor.new("Bright red")
+        tent.Material = Enum.Material.Neon
+        tent.Parent = workspace
+
+        local fire = Instance.new("Fire")
+        fire.Size = 10 
+        fire.Heat = 10 
+        fire.Parent = tent
+
+        local billboardGui = Instance.new("BillboardGui")
+        billboardGui.Size = UDim2.new(0, 200, 0, 50)
+        billboardGui.StudsOffset = Vector3.new(0, 10, 0) 
+        billboardGui.Adornee = tent
+        billboardGui.Parent = workspace
+
+        local messageLabel = Instance.new("TextLabel")
+        messageLabel.Size = UDim2.new(1, 0, 1, 0)
+        messageLabel.BackgroundTransparency = 1
+        messageLabel.Text = "Server is doomed"
+        messageLabel.TextColor3 = Color3.fromRGB(255, 0, 0) 
+        messageLabel.TextScaled = true
+        messageLabel.Parent = billboardGui
+    end)
+
+    fireMapButton.MouseButton1Click:Connect(function()
+        for _, part in pairs(workspace:GetDescendants()) do
+            if part:IsA("BasePart") then
+                local fire = Instance.new("Fire")
+                fire.Size = 5
+                fire.Heat = 10
+                fire.Parent = part
+                
+                part.Touched:Connect(function(hit)
+                    local character = hit.Parent
+                    local humanoid = character:FindFirstChildOfClass("Humanoid")
+                    if humanoid then
+                        humanoid:TakeDamage(5) 
+                    end
+                end)
+            end
+        end
+    end)
+
+    musicButton.MouseButton1Click:Connect(function()
+        local sound = Instance.new("Sound")
+        sound.SoundId = "rbxassetid://124011793413819"
+        sound.Volume = 1  
+        sound.Looped = true  
+        sound.Parent = game:GetService("SoundService")  
+        sound:Play()
+    end)
+
+    chaosButton.MouseButton1Click:Connect(function()
+        for _, part in pairs(workspace:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.Velocity = Vector3.new(math.random(-50, 50), math.random(50, 100), math.random(-50, 50)) 
+            end
+        end
+    end)
+
+else
+    warn("Игрок hack_86675 не найден.")
+end
